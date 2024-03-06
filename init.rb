@@ -1,8 +1,8 @@
 require 'redmine'
 
-require_dependency 'redmine_cut_tag/hooks'
-require_dependency 'redmine_cut_tag/macros'
-require_dependency 'redmine/wiki_formatting/textile/cut_tag_helper'
+require File.expand_path('../lib/redmine_cut_tag/hooks', __FILE__)
+require File.expand_path('../lib/redmine_cut_tag/macros', __FILE__)
+require File.expand_path('../lib/redmine/wiki_formatting/textile/cut_tag_helper', __FILE__)
 
 Redmine::Plugin.register :redmine_cut_tag do
   name 'Redmine Cut Tag Plugin'
